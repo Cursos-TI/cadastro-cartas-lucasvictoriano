@@ -2,7 +2,7 @@
 
 int main() {
     // Declaração das variáveis para a Carta 1
-    char estado1[2];
+    char estado1[4];
     char codigo1[4];
     char nomeCidade1[50];
     int populacao1;
@@ -11,7 +11,7 @@ int main() {
     int pontosTuristicos1;
 
     // Declaração das variáveis para a Carta 2
-    char estado2;
+    char estado2[4];
     char codigo2[4];
     char nomeCidade2[50];
     int populacao2;
