@@ -1,1 +1,111 @@
+#include <stdio.h>
 
+int main() {
+    // Declaração das variáveis para a Carta 1
+    char nomedopais1[4];
+    int populacao1;
+    float area1;
+    float pib1;
+    int pontosTuristicos1;
+    float densidadedemografica1;
+
+    // Declaração das variáveis para a Carta 2
+    char nomedopais2[4];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontosTuristicos2;
+    float densidadedemografica2;
+    
+    
+    
+    
+   // Entrada de dados para carta 1
+    printf ("Insira os dados da carta 1:\n ");
+
+    printf ("Nome do país: ");
+    scanf ("%s", &nomedopais1);
+    
+    printf ("População:  ");
+    scanf ("%d", &populacao1);
+
+    printf ("Area (em Km²)");
+    scanf ("%d", &area1);
+
+    printf ("Pib: ");
+    scanf ("%f", &pib1);
+
+    printf ("Número de pontos pontosTuristicos: ");
+    scanf ("%s", &pontosTuristicos1);
+
+
+    // Entrada de dados para carta 2
+    printf ("Insira os dados da carta 2:\n ");
+
+    printf ("Nome do país: ");
+    scanf ("%s", &nomedopais2);
+    
+    printf ("População:  ");
+    scanf ("%d", &populacao2);
+
+    printf ("Area (em Km²)");
+    scanf ("%d", &area2);
+
+    printf ("Pib: ");
+    scanf ("%f", &pib2);
+
+    printf ("Número de pontos pontosTuristicos: ");
+    scanf ("%s", &pontosTuristicos2);
+
+    if (nomedopais1[0] > nomedopais2[0]) {
+        printf ("A carta com maior nome do país é: %s\n", nomedopais1);
+    } else if (nomedopais2[0] > nomedopais1[0]) {
+        printf ("A carta com maior nome do país é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm o mesmo nome do país.\n");
+    }
+
+    if (densidadedemografica1 > densidadedemografica2) {
+        printf ("A carta com maior densidade demográfica é: %s\n", nomedopais1);
+    } else if (densidadedemografica2 > densidadedemografica1) {
+        printf ("A carta com maior densidade demográfica é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm o mesmo código.\n");
+    }
+    if (nomedopais1[0] > nomedopais2[0]) {
+        printf ("A carta com maior nome de pais é: %s\n", nomedopais1);
+    } else if (nomedopais2[0] > nomedopais1[0]) {
+        printf ("A carta com maior nome de pais é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm o mesmo nome de pais.\n");
+    }
+    if (populacao1 > populacao2) {
+        printf ("A carta com maior população é: %s\n", nomedopais1);
+    } else if (populacao2 > populacao1) {
+        printf ("A carta com maior população é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm a mesma população.\n");
+    }
+    if (area1 > area2) {
+        printf ("A carta com maior área é: %s\n", nomedopais1);
+    } else if (area2 > area1) {
+        printf ("A carta com maior área é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm a mesma área.\n");
+    }
+    if (pib1 > pib2) {
+        printf ("A carta com maior PIB é: %s\n", nomedopais1);
+    } else if (pib2 > pib1) {
+        printf ("A carta com maior PIB é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm o mesmo PIB.\n");
+    }
+    if (pontosTuristicos1 > pontosTuristicos2) {
+        printf ("A carta com maior número de pontos turísticos é: %s\n", nomedopais1);
+    } else if (pontosTuristicos2 > pontosTuristicos1) {
+        printf ("A carta com maior número de pontos turísticos é: %s\n", nomedopais2);
+    } else {
+        printf ("Ambas as cartas têm o mesmo número de pontos turísticos.\n");
+    }
+return 0;
+} 
